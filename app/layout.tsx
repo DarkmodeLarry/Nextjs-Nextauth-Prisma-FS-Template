@@ -1,7 +1,6 @@
 import NavMenu from '@/app/NavMenu'
 import '@/styles/globals.css'
 import { Open_Sans } from 'next/font/google'
-import Link from 'next/link'
 import AuthProvider from './AuthProvider'
 
 const myFont = Open_Sans({ weight: '400', subsets: ['latin'] })
@@ -22,7 +21,7 @@ export default function RootLayout({ children }: Props) {
         <body className={myFont.className}>
           <div className=''>
             <NavMenu />
-            <main>{children}</main>
+            <main className='h-screen bg-slate-600'>{children}</main>
           </div>
         </body>
       </html>

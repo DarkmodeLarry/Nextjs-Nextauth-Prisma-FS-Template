@@ -21,8 +21,10 @@ export default async function Dashboard() {
 
   return (
     <>
-      <h1>Dashboard</h1>
-      <SignOutButton />
+      <div className='flex items-center justify-between w-full bg-slate-600'>
+        <h1>Dashboard</h1>
+        <SignOutButton />
+      </div>
       <ProfileForm user={user} />
     </>
   )

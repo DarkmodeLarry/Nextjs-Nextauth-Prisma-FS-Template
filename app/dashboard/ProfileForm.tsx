@@ -25,8 +25,8 @@ export function ProfileForm({ user }: any) {
   }
 
   return (
-    <div>
-      <h2>Edit Your Profile</h2>
+    <div className='p-4 m-5 rounded-sm shadow-md bg-slate-700 shadow-slate-200'>
+      <h2 className='text-2xl tracking-widest'>Edit Your Profile</h2>
       <form onSubmit={updateUser}>
         <label htmlFor='name'>Name</label>
         <input type='text' name='name' defaultValue={user?.name ?? ''} />
@@ -37,7 +37,9 @@ export function ProfileForm({ user }: any) {
         <label htmlFor='image'>Profile Image URL</label>
         <input type='text' name='image' defaultValue={user?.image ?? ''} />
 
-        <button type='submit'>Save</button>
+        <button className='px-3 my-4 rounded-md bg-slate-200 text-slate-600' type='submit'>
+          Save
+        </button>
       </form>
     </div>
   )

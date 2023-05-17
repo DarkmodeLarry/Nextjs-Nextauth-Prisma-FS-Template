@@ -1,17 +1,16 @@
 import Link from 'next/link'
-import Image from 'next/image'
 import { SignInButton, SignOutButton } from '@/components/buttons'
 import AuthCheck from '@/components/AuthCheck'
 import { BsYinYang } from 'react-icons/bs'
 
 export default function NavMenu() {
   return (
-    <nav className='flex items-center justify-between w-full bg-gray-300 px-[5%]'>
+    <nav className='flex items-center justify-between w-full bg-gray-400 px-[5%] py-2 text-white'>
       <div className='flex items-center'>
-        <Link href={'/'}>
+        <Link href={'/'} className='pr-4'>
           <BsYinYang className='w-10 h-10' />
         </Link>
-        <ul className={'links'}>
+        <ul className='flex gap-4'>
           <li>
             <Link href={'/about'}>About</Link>
           </li>
