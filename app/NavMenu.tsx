@@ -6,30 +6,34 @@ import { BsYinYang } from 'react-icons/bs'
 
 export default function NavMenu() {
   return (
-    <nav className='flex items-center bg-gray-300'>
-      <Link href={'/'}>
-        <BsYinYang className='w-10 h-10' />
-      </Link>
-      <ul className={'links'}>
-        <li>
-          <Link href={'/about'}>About</Link>
-        </li>
-        <li>
-          <Link href={'/blog'}>Blog</Link>
-        </li>
-        <li>
-          <Link href={'/users'}>Users</Link>
-        </li>
-        <li>
+    <nav className='flex items-center justify-between w-full bg-gray-300 px-[5%]'>
+      <div className='flex items-center'>
+        <Link href={'/'}>
+          <BsYinYang className='w-10 h-10' />
+        </Link>
+        <ul className={'links'}>
+          <li>
+            <Link href={'/about'}>About</Link>
+          </li>
+          <li>
+            <Link href={'/blog'}>Blog</Link>
+          </li>
+          <li>
+            <Link href={'/users'}>Users</Link>
+          </li>
+        </ul>
+      </div>
+      <div className='flex items-center gap-4'>
+        <span>
           <SignInButton />
-        </li>
+        </span>
 
-        <li>
+        <span>
           <AuthCheck>
             <SignOutButton />
           </AuthCheck>
-        </li>
-      </ul>
+        </span>
+      </div>
     </nav>
   )
 }

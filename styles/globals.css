@@ -2,25 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-.container {
-  width: 810px;
-  max-width: 100%;
-  margin: 0 auto 10px;
-}
 main {
   padding: 1rem;
   min-height: 300px;
-}
-.nav {
-  display: flex;
-
-  color: white;
-  height: 70px;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
 }
 
 .links {

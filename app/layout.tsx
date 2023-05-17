@@ -20,7 +20,7 @@ export default function RootLayout({ children }: Props) {
     <AuthProvider>
       <html lang='en'>
         <body className={myFont.className}>
-          <div className='container'>
+          <div className=''>
             <NavMenu />
             <main>{children}</main>
           </div>
